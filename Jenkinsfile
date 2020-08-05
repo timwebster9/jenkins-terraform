@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Hello') {
       environment {
-        SERVICE_CREDS = credentials('azure-jenkins-launchpad-sp')
+        SERVICE_CREDS = credentials('AV_LAUNCHPAD_SP')
       }
       steps {
         sh 'terraform init'
